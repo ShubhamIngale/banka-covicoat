@@ -7,6 +7,10 @@
           box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 h1, h2, h3, h4, h5 {
   font-family: 'PT Serif', serif;
   color: #000000;
@@ -129,6 +133,8 @@ p, input {
 }
 
 .hero-container .row .text-col .contact-btn {
+  padding: 9px 17px;
+  font-family: 'PT Sans', serif;
   height: 41px;
   width: 116px;
   max-width: 116px;
@@ -138,6 +144,7 @@ p, input {
   color: #FFFFFF;
   background-color: #2E7D32;
   border-radius: 11px;
+  cursor: pointer;
 }
 
 .hero-container .row .img-col img {
@@ -155,8 +162,8 @@ p, input {
 
 .how-container .img-para {
   position: absolute;
-  top: 150px;
-  left: 120px;
+  top: 12%;
+  left: 10%;
   font-size: 26px;
   font-weight: normal;
   line-height: 34px;
