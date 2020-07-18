@@ -81,19 +81,19 @@ p, input {
 
                         .hero-heading {
                                 margin-bottom: 19px;
-                                font-size: 48px;
+                                font-size: 40px;
                                 font-weight: bold;
-                                line-height: 58px;
+                                line-height: 48px;
                         }
                         .hero-subheading {
-                                margin-bottom: 20px;
+                                margin-bottom: 30px;
                                 font-size: 32px;
                                 font-weight: bold;
                                 line-height: 41px;
                                 color: #389264;
                         }
                         .hero-para {
-                                margin-bottom: 42px;
+                                margin-bottom: 35px;
                                 font-size: 20px;
                                 font-weight: normal;
                                 line-height: 26px;
@@ -128,11 +128,12 @@ p, input {
         position: relative;
         .main-image {
                 width: 100%;
+                margin-left: -46px;
         }
         .img-para {
                 position: absolute;
                 top: 12%;
-                left: 10%;
+                left: 5%;
                 font-size: 26px;
                 font-weight: normal;
                 line-height: 34px;
@@ -141,7 +142,7 @@ p, input {
         .points-div {
                 position: absolute;
                 bottom: 1%;
-                right: 11%;
+                right: 15%;
             
                 .small-head {
                         margin-bottom: 31px;
@@ -284,12 +285,13 @@ footer {
                 .img-para {
                         transform: scale(.8);
                         // top: 12%;
-                        left: 7%;
+                        left: 1%;
                     }
                     .points-div {
                         transform: scale(.8);
-                        bottom: 1%;
-                        right: 4%;
+                        bottom: -1%;
+                        right: 11%;
+
                     }
 
         } 
@@ -306,12 +308,12 @@ footer {
                 .img-para {
                         transform: scale(.7);
                         // top: 12%;
-                        left: 3.5%;
+                        left: -4.5%;
                     }
                     .points-div {
                         transform: scale(0.6);
-                        bottom: -9%;
-                        right: -6%;
+                        bottom: -12%;
+                        right: 1%;
                     }
 
         } 
@@ -319,6 +321,7 @@ footer {
 // mobile
 @media screen and (max-width: 767px) {
         .nav-container {
+                margin-bottom: 40px;
                 flex-direction: column;
                 height: auto;
 
@@ -326,19 +329,40 @@ footer {
                         width: auto;
                 }
         }
+
+        .hero-container {
+                .hero-heading {
+                        margin-bottom: 19px !important;
+                        font-size: 32px !important;
+                        line-height: 40px !important;
+                }
+                .hero-subheading {
+                        margin-bottom: 20px !important;
+                        font-size: 28px !important;
+                        line-height: 34px !important;
+                }
+                .hero-para {
+                        margin-bottom: 24px !important;
+                }
+        }
+
         .how-container{
+                .main-image {
+                        margin-left: -7px;
+                }
                 .img-para {
                         transform: scale(0.3);
                         top: 3%;
-                        left: -14%;
+                        left: -16%;
                     }
                     .points-div {
                         br {
                                 display: none;
-                        }
+                        }                    
                         transform: scale(0.3);
                         bottom: -42%;
                         right: -38%;
+                        margin-left: -27%;
                     }
         } 
 
@@ -368,16 +392,16 @@ footer {
 @media screen and (max-width: 767px) and (orientation: landscape) {
         .how-container{
                 .img-para {
-                        transform: scale(0.6);
-                        top: 10%;
-                        left: 1%;
+                        transform: scale(0.5);
+                        top: 8%;
+                        left: -5%;
                     }
                     .points-div {
                         br {
                                 display: block;
                         }
                         transform: scale(0.5);
-                        bottom: -12%;
+                        bottom: -23%;
                         right: -17%;
                     
                     }

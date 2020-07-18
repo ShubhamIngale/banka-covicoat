@@ -108,13 +108,13 @@ p, input {
 
 .hero-container .row .text-col .hero-heading {
   margin-bottom: 19px;
-  font-size: 48px;
+  font-size: 40px;
   font-weight: bold;
-  line-height: 58px;
+  line-height: 48px;
 }
 
 .hero-container .row .text-col .hero-subheading {
-  margin-bottom: 20px;
+  margin-bottom: 30px;
   font-size: 32px;
   font-weight: bold;
   line-height: 41px;
@@ -122,7 +122,7 @@ p, input {
 }
 
 .hero-container .row .text-col .hero-para {
-  margin-bottom: 42px;
+  margin-bottom: 35px;
   font-size: 20px;
   font-weight: normal;
   line-height: 26px;
@@ -154,12 +154,13 @@ p, input {
 
 .how-container .main-image {
   width: 100%;
+  margin-left: -46px;
 }
 
 .how-container .img-para {
   position: absolute;
   top: 12%;
-  left: 10%;
+  left: 5%;
   font-size: 26px;
   font-weight: normal;
   line-height: 34px;
@@ -169,7 +170,7 @@ p, input {
 .how-container .points-div {
   position: absolute;
   bottom: 1%;
-  right: 11%;
+  right: 15%;
 }
 
 .how-container .points-div .small-head {
@@ -336,13 +337,13 @@ footer .container .link ul li {
   .how-container .img-para {
     -webkit-transform: scale(0.8);
             transform: scale(0.8);
-    left: 7%;
+    left: 1%;
   }
   .how-container .points-div {
     -webkit-transform: scale(0.8);
             transform: scale(0.8);
-    bottom: 1%;
-    right: 4%;
+    bottom: -1%;
+    right: 11%;
   }
 }
 
@@ -353,18 +354,19 @@ footer .container .link ul li {
   .how-container .img-para {
     -webkit-transform: scale(0.7);
             transform: scale(0.7);
-    left: 3.5%;
+    left: -4.5%;
   }
   .how-container .points-div {
     -webkit-transform: scale(0.6);
             transform: scale(0.6);
-    bottom: -9%;
-    right: -6%;
+    bottom: -12%;
+    right: 1%;
   }
 }
 
 @media screen and (max-width: 767px) {
   .nav-container {
+    margin-bottom: 40px;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -374,17 +376,34 @@ footer .container .link ul li {
   .nav-container .email-div {
     width: auto;
   }
+  .hero-container .hero-heading {
+    margin-bottom: 19px !important;
+    font-size: 32px !important;
+    line-height: 40px !important;
+  }
+  .hero-container .hero-subheading {
+    margin-bottom: 20px !important;
+    font-size: 28px !important;
+    line-height: 34px !important;
+  }
+  .hero-container .hero-para {
+    margin-bottom: 24px !important;
+  }
+  .how-container .main-image {
+    margin-left: -7px;
+  }
   .how-container .img-para {
     -webkit-transform: scale(0.3);
             transform: scale(0.3);
     top: 3%;
-    left: -14%;
+    left: -16%;
   }
   .how-container .points-div {
     -webkit-transform: scale(0.3);
             transform: scale(0.3);
     bottom: -42%;
     right: -38%;
+    margin-left: -27%;
   }
   .how-container .points-div br {
     display: none;
@@ -408,15 +427,15 @@ footer .container .link ul li {
 
 @media screen and (max-width: 767px) and (orientation: landscape) {
   .how-container .img-para {
-    -webkit-transform: scale(0.6);
-            transform: scale(0.6);
-    top: 10%;
-    left: 1%;
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+    top: 8%;
+    left: -5%;
   }
   .how-container .points-div {
     -webkit-transform: scale(0.5);
             transform: scale(0.5);
-    bottom: -12%;
+    bottom: -23%;
     right: -17%;
   }
   .how-container .points-div br {
