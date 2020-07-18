@@ -1,0 +1,270 @@
+// FONTS
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap');
+
+
+* {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5 {
+        font-family: 'PT Serif', serif;
+        color: #000000;
+}
+
+p, input {
+        font-family: 'PT Sans', serif;
+        color: #000000;
+}
+
+.container {
+        max-width: 1250px;
+}
+
+// NAV
+.nav-container {
+        margin-bottom: 62px;
+        height: 72px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        .email-div {
+                width: 25%;
+                display: flex;
+                align-items: center;
+                .icon-div {
+                        margin-right: 16px;
+                        width: 53px;
+                        height: 53px;
+                        border-radius: 50%;
+                        border: 1px solid #389264;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        i {
+                                color: #389264;
+                        }
+                }
+                p {
+                        margin: 0;
+                        font-size: 16px;
+                        line-height: 26px;
+                        font-weight: 600;
+                        color: #222222;
+                        text-transform: capitalize;
+                        a {
+                                font-size: 15px;
+                                line-height: 26px;
+                                font-weight: 400;
+                                color: #777777;
+                        }
+                }
+        }
+}
+
+
+// HERO
+.hero-container {
+        height: auto;
+        .row {
+                .text-col {
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: flex-start;
+
+                        .hero-heading {
+                                margin-bottom: 19px;
+                                font-size: 48px;
+                                font-weight: bold;
+                                line-height: 58px;
+                        }
+                        .hero-subheading {
+                                margin-bottom: 20px;
+                                font-size: 32px;
+                                font-weight: bold;
+                                line-height: 41px;
+                                color: #389264;
+                        }
+                        .hero-para {
+                                margin-bottom: 42px;
+                                font-size: 20px;
+                                font-weight: normal;
+                                line-height: 26px;
+                        }
+                        .contact-btn {
+                                height: 41px;
+                                width: 116px;
+                                max-width: 116px;
+                                font-size: 18px;
+                                font-weight: bold;
+                                line-height: 23px;
+                                color: #FFFFFF;
+                                background-color: #2E7D32;
+                                border-radius: 11px;
+                        }
+                }
+                .img-col {
+                        img {
+                                width: 100%;
+                        }
+                }
+        }
+}
+
+// HOW IT WORKS
+
+.how-container {
+        margin-top: 54px;
+        position: relative;
+        .main-image {
+                width: 100%;
+        }
+        .img-para {
+                position: absolute;
+                top: 150px;
+                left: 120px;
+                font-size: 26px;
+                font-weight: normal;
+                line-height: 34px;
+                text-align: center;
+        }
+        .points-div {
+                position: absolute;
+                bottom: 1%;
+                right: 11%;
+            
+                .small-head {
+                        margin-bottom: 31px;
+                        font-size: 32px;
+                        font-weight: bold;
+                        line-height: 41px;
+                }
+
+                .points-list {
+                        list-style: none;
+                        font-size: 20px;
+                        font-weight: normal;
+                        line-height: 26px;
+
+                        .list-item {
+                                position: relative;
+                                margin-bottom: 40px;
+                                height: 80px;
+                                display: flex;
+                                align-items: center;
+                                p {
+                                        margin: 0;
+                                        padding-left: 100px;
+                                }
+                                &::before {
+                                        position: absolute;
+                                }
+                        }
+                        .list-item:nth-of-type(1) {
+                                &::before {
+                                        content: url(../media/icons/Icon-1-Active-Ingradients.svg);
+                                }
+                        }
+                        .list-item:nth-of-type(2) {
+                                &::before {
+                                        content: url(../media/icons/Icon-2-Nano-Particles.svg);
+                                }
+                        }
+                        .list-item:nth-of-type(3) {
+                                &::before {
+                                        content: url(../media/icons/Icon-3-Coating.svg);
+                                }
+                        }
+                }
+        }
+}
+
+hr {
+        margin: 0;
+        border-top: 1px solid #6D6D6D;
+}
+
+// FORM 
+
+.form-container {
+        margin-top: 74px;
+        margin-bottom: 50px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .form-heading {
+                margin-bottom: 48px;
+                font-size: 36px;
+                font-weight: bold;
+                line-height: 45px;
+                color: #2E7D32;
+        }
+
+        .form {
+                width: 45%;
+
+                .form-group {
+                        margin-bottom: 32px;
+                }
+
+                input {
+                        height: 47px;
+                }
+
+                input, textarea {
+                        background-color: #F0F0F0;
+                        border: 1px solid #F0F0F0;
+                        font-size: 15px;
+                        line-height: 21px;
+
+                        &::placeholder {
+                                color: #757575;
+                        }
+
+                        &:hover, &:focus {
+                                box-shadow: none;
+                                border: 1px solid #757575;
+                        }
+                }
+
+                .send-btn {
+                        height: 47px;
+                        width: 200px;
+                        color: #FFFFFF;
+                        background-color: #309050;
+                }
+        }
+}
+
+footer {
+        padding: 24px 0px;
+        background: #0d1a2f;
+        .container {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                p,a {
+                        color: #ababab;
+                        font-size: 15px;
+                        font-weight: 400;
+                        line-height: 26px;
+                        margin-bottom: 0px;
+                }
+
+                .link {
+                        ul {
+                                margin-bottom: 0rem;
+                                display: flex;
+                                list-style: none;
+                                li {
+                                        margin-left: 32px;
+                                }
+                        }
+                }
+        }
+}

@@ -1,0 +1,331 @@
+@import url("https://fonts.googleapis.com/css2?family=PT+Serif:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: 'PT Serif', serif;
+  color: #000000;
+}
+
+p, input {
+  font-family: 'PT Sans', serif;
+  color: #000000;
+}
+
+.container {
+  max-width: 1250px;
+}
+
+.nav-container {
+  margin-bottom: 62px;
+  height: 72px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.nav-container .email-div {
+  width: 25%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.nav-container .email-div .icon-div {
+  margin-right: 16px;
+  width: 53px;
+  height: 53px;
+  border-radius: 50%;
+  border: 1px solid #389264;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.nav-container .email-div .icon-div i {
+  color: #389264;
+}
+
+.nav-container .email-div p {
+  margin: 0;
+  font-size: 16px;
+  line-height: 26px;
+  font-weight: 600;
+  color: #222222;
+  text-transform: capitalize;
+}
+
+.nav-container .email-div p a {
+  font-size: 15px;
+  line-height: 26px;
+  font-weight: 400;
+  color: #777777;
+}
+
+.hero-container {
+  height: auto;
+}
+
+.hero-container .row .text-col {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.hero-container .row .text-col .hero-heading {
+  margin-bottom: 19px;
+  font-size: 48px;
+  font-weight: bold;
+  line-height: 58px;
+}
+
+.hero-container .row .text-col .hero-subheading {
+  margin-bottom: 20px;
+  font-size: 32px;
+  font-weight: bold;
+  line-height: 41px;
+  color: #389264;
+}
+
+.hero-container .row .text-col .hero-para {
+  margin-bottom: 42px;
+  font-size: 20px;
+  font-weight: normal;
+  line-height: 26px;
+}
+
+.hero-container .row .text-col .contact-btn {
+  height: 41px;
+  width: 116px;
+  max-width: 116px;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 23px;
+  color: #FFFFFF;
+  background-color: #2E7D32;
+  border-radius: 11px;
+}
+
+.hero-container .row .img-col img {
+  width: 100%;
+}
+
+.how-container {
+  margin-top: 54px;
+  position: relative;
+}
+
+.how-container .main-image {
+  width: 100%;
+}
+
+.how-container .img-para {
+  position: absolute;
+  top: 150px;
+  left: 120px;
+  font-size: 26px;
+  font-weight: normal;
+  line-height: 34px;
+  text-align: center;
+}
+
+.how-container .points-div {
+  position: absolute;
+  bottom: 1%;
+  right: 11%;
+}
+
+.how-container .points-div .small-head {
+  margin-bottom: 31px;
+  font-size: 32px;
+  font-weight: bold;
+  line-height: 41px;
+}
+
+.how-container .points-div .points-list {
+  list-style: none;
+  font-size: 20px;
+  font-weight: normal;
+  line-height: 26px;
+}
+
+.how-container .points-div .points-list .list-item {
+  position: relative;
+  margin-bottom: 40px;
+  height: 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.how-container .points-div .points-list .list-item p {
+  margin: 0;
+  padding-left: 100px;
+}
+
+.how-container .points-div .points-list .list-item::before {
+  position: absolute;
+}
+
+.how-container .points-div .points-list .list-item:nth-of-type(1)::before {
+  content: url(../media/icons/Icon-1-Active-Ingradients.svg);
+}
+
+.how-container .points-div .points-list .list-item:nth-of-type(2)::before {
+  content: url(../media/icons/Icon-2-Nano-Particles.svg);
+}
+
+.how-container .points-div .points-list .list-item:nth-of-type(3)::before {
+  content: url(../media/icons/Icon-3-Coating.svg);
+}
+
+hr {
+  margin: 0;
+  border-top: 1px solid #6D6D6D;
+}
+
+.form-container {
+  margin-top: 74px;
+  margin-bottom: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.form-container .form-heading {
+  margin-bottom: 48px;
+  font-size: 36px;
+  font-weight: bold;
+  line-height: 45px;
+  color: #2E7D32;
+}
+
+.form-container .form {
+  width: 45%;
+}
+
+.form-container .form .form-group {
+  margin-bottom: 32px;
+}
+
+.form-container .form input {
+  height: 47px;
+}
+
+.form-container .form input, .form-container .form textarea {
+  background-color: #F0F0F0;
+  border: 1px solid #F0F0F0;
+  font-size: 15px;
+  line-height: 21px;
+}
+
+.form-container .form input::-webkit-input-placeholder, .form-container .form textarea::-webkit-input-placeholder {
+  color: #757575;
+}
+
+.form-container .form input:-ms-input-placeholder, .form-container .form textarea:-ms-input-placeholder {
+  color: #757575;
+}
+
+.form-container .form input::-ms-input-placeholder, .form-container .form textarea::-ms-input-placeholder {
+  color: #757575;
+}
+
+.form-container .form input::placeholder, .form-container .form textarea::placeholder {
+  color: #757575;
+}
+
+.form-container .form input:hover, .form-container .form input:focus, .form-container .form textarea:hover, .form-container .form textarea:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border: 1px solid #757575;
+}
+
+.form-container .form .send-btn {
+  height: 47px;
+  width: 200px;
+  color: #FFFFFF;
+  background-color: #309050;
+}
+
+footer {
+  padding: 24px 0px;
+  background: #0d1a2f;
+}
+
+footer .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+footer .container p, footer .container a {
+  color: #ababab;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 26px;
+  margin-bottom: 0px;
+}
+
+footer .container .link ul {
+  margin-bottom: 0rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+}
+
+footer .container .link ul li {
+  margin-left: 32px;
+}
+/*# sourceMappingURL=main.css.map */
