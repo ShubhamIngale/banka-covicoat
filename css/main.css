@@ -335,4 +335,96 @@ footer .container .link ul {
 footer .container .link ul li {
   margin-left: 32px;
 }
+
+@media screen and (min-width: 993px) and (max-width: 1024px) {
+  .how-container .img-para {
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
+    left: 7%;
+  }
+  .how-container .points-div {
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8);
+    bottom: 1%;
+    right: 4%;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  .nav-container .email-div {
+    width: 30%;
+  }
+  .how-container .img-para {
+    -webkit-transform: scale(0.7);
+            transform: scale(0.7);
+    left: 3.5%;
+  }
+  .how-container .points-div {
+    -webkit-transform: scale(0.6);
+            transform: scale(0.6);
+    bottom: -9%;
+    right: -6%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .nav-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: auto;
+  }
+  .nav-container .email-div {
+    width: auto;
+  }
+  .how-container .img-para {
+    -webkit-transform: scale(0.3);
+            transform: scale(0.3);
+    top: 3%;
+    left: -14%;
+  }
+  .how-container .points-div {
+    -webkit-transform: scale(0.3);
+            transform: scale(0.3);
+    bottom: -42%;
+    right: -38%;
+  }
+  .how-container .points-div br {
+    display: none;
+  }
+  .form-container .form {
+    width: 100%;
+  }
+  footer .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  footer .container p {
+    text-align: center;
+  }
+  footer .container .link ul {
+    margin-left: -32px;
+  }
+}
+
+@media screen and (max-width: 767px) and (orientation: landscape) {
+  .how-container .img-para {
+    -webkit-transform: scale(0.6);
+            transform: scale(0.6);
+    top: 10%;
+    left: 1%;
+  }
+  .how-container .points-div {
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+    bottom: -12%;
+    right: -17%;
+  }
+  .how-container .points-div br {
+    display: block;
+  }
+}
 /*# sourceMappingURL=main.css.map */
