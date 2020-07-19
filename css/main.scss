@@ -68,6 +68,11 @@ p, input {
         }
 }
 
+.swal2-styled.swal2-confirm {
+        background-color: #389264 !important;
+        transition: all .2s ease-in-out;
+}
+
 
 // HERO
 .hero-container {
@@ -244,6 +249,16 @@ hr {
                         width: 200px;
                         color: #FFFFFF;
                         background-color: #309050;
+
+                        &:hover, &:focus {
+                                outline: none;
+                                box-shadow: none;
+                        }
+                }
+
+                label.error {
+                        margin: 0;
+                        color: red;
                 }
         }
 }
