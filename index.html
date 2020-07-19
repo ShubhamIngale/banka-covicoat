@@ -163,6 +163,7 @@
                                                 data:$(form).serialize(),
                                                 processData: false,
                                                 success: function(data) {
+                                                        $(form).trigger('reset');
                                                         $('.btn').html('SEND');
                                                         Swal.fire(
                                                                 'Sent!',
@@ -171,6 +172,7 @@
                                                         )
                                                 },
                                                 error: function(e) {
+                                                        $(form).trigger('reset');
                                                         $('.btn').html('SEND');
                                                         Swal.fire('Oops...', 'Something went wrong!', 'error')
                                                 }
