@@ -296,8 +296,11 @@ hr {
 .form-container .form .send-btn {
   height: 47px;
   width: 200px;
+  font-size: 18px;
+  font-weight: bold;
   color: #FFFFFF;
   background-color: #309050;
+  border-radius: 8px;
 }
 
 .form-container .form .send-btn:hover, .form-container .form .send-btn:focus {
