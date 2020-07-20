@@ -34,10 +34,15 @@ p, input {
         flex-direction: row;
         align-items: center;
         justify-content: space-between;
+
+        .logo-col {
+                flex: 3;
+        }
         .email-div {
                 width: 25%;
                 display: flex;
                 align-items: center;
+                flex: 1;
                 .icon-div {
                         margin-right: 16px;
                         width: 53px;
@@ -98,7 +103,7 @@ p, input {
                                 color: #389264;
                         }
                         .hero-para {
-                                margin-bottom: 35px;
+                                margin-bottom: 20px;
                                 font-size: 20px;
                                 font-weight: normal;
                                 line-height: 26px;
@@ -147,9 +152,10 @@ p, input {
         .points-div {
                 position: absolute;
                 bottom: 1%;
-                right: 15%;
+                right: 10%;
             
                 .small-head {
+                        margin-left: 100px;
                         margin-bottom: 31px;
                         font-size: 32px;
                         font-weight: bold;
@@ -166,8 +172,8 @@ p, input {
                                 position: relative;
                                 margin-bottom: 40px;
                                 height: 80px;
-                                display: flex;
-                                align-items: center;
+                                // display: flex;
+                                // align-items: center;
                                 p {
                                         margin: 0;
                                         padding-left: 100px;
@@ -202,23 +208,24 @@ hr {
 
 // FORM 
 
+.form-section {
+        background: #FAFAFA;
+}
+
 .form-container {
-        margin-top: 74px;
-        margin-bottom: 50px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+        padding-top: 74px;
+        padding-bottom: 50px;
+        
 
         .form-heading {
                 margin-bottom: 48px;
                 font-size: 36px;
                 font-weight: bold;
                 line-height: 45px;
-                color: #2E7D32;
         }
 
         .form {
-                width: 45%;
+                max-width: 517px;
 
                 .form-group {
                         margin-bottom: 32px;
@@ -261,7 +268,37 @@ hr {
                         color: red;
                 }
         }
+
+        .contact-col {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                .div {
+                        .contact-head {
+                                margin-bottom: 30px;
+                                font-size: 24px;
+                                font-weight: bold;
+                                color: rgba(0, 0, 0, 0.87);
+                        }
+                        .contact {
+                                list-style: none;
+                                .list-item {
+                                        margin-bottom: 50px;
+                                        p {
+                                                margin: 0;
+                                                font-size: 20px;
+                                                line-height: 26px;
+                                                color: rgba(0, 0, 0, 0.87);
+                                        }
+                                        .list-head {
+                                                font-weight: bold;
+                                        }
+                                }
+                        }
+                }
+        }
 }
+
 
 footer {
         padding: 24px 0px;

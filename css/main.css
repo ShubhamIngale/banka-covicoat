@@ -39,6 +39,12 @@ p, input {
           justify-content: space-between;
 }
 
+.nav-container .logo-col {
+  -webkit-box-flex: 3;
+      -ms-flex: 3;
+          flex: 3;
+}
+
 .nav-container .email-div {
   width: 25%;
   display: -webkit-box;
@@ -47,6 +53,9 @@ p, input {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
 }
 
 .nav-container .email-div .icon-div {
@@ -128,7 +137,7 @@ p, input {
 }
 
 .hero-container .row .text-col .hero-para {
-  margin-bottom: 35px;
+  margin-bottom: 20px;
   font-size: 20px;
   font-weight: normal;
   line-height: 26px;
@@ -176,10 +185,11 @@ p, input {
 .how-container .points-div {
   position: absolute;
   bottom: 1%;
-  right: 15%;
+  right: 10%;
 }
 
 .how-container .points-div .small-head {
+  margin-left: 100px;
   margin-bottom: 31px;
   font-size: 32px;
   font-weight: bold;
@@ -197,12 +207,6 @@ p, input {
   position: relative;
   margin-bottom: 40px;
   height: 80px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 
 .how-container .points-div .points-list .list-item p {
@@ -231,19 +235,13 @@ hr {
   border-top: 1px solid #6D6D6D;
 }
 
+.form-section {
+  background: #FAFAFA;
+}
+
 .form-container {
-  margin-top: 74px;
-  margin-bottom: 50px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  padding-top: 74px;
+  padding-bottom: 50px;
 }
 
 .form-container .form-heading {
@@ -251,11 +249,10 @@ hr {
   font-size: 36px;
   font-weight: bold;
   line-height: 45px;
-  color: #2E7D32;
 }
 
 .form-container .form {
-  width: 45%;
+  max-width: 517px;
 }
 
 .form-container .form .form-group {
@@ -311,6 +308,44 @@ hr {
 .form-container .form label.error {
   margin: 0;
   color: red;
+}
+
+.form-container .contact-col {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.form-container .contact-col .div .contact-head {
+  margin-bottom: 30px;
+  font-size: 24px;
+  font-weight: bold;
+  color: rgba(0, 0, 0, 0.87);
+}
+
+.form-container .contact-col .div .contact {
+  list-style: none;
+}
+
+.form-container .contact-col .div .contact .list-item {
+  margin-bottom: 50px;
+}
+
+.form-container .contact-col .div .contact .list-item p {
+  margin: 0;
+  font-size: 20px;
+  line-height: 26px;
+  color: rgba(0, 0, 0, 0.87);
+}
+
+.form-container .contact-col .div .contact .list-item .list-head {
+  font-weight: bold;
 }
 
 footer {
