@@ -141,14 +141,15 @@ p, input {
   font-size: 20px;
   font-weight: normal;
   line-height: 26px;
+  text-transform: uppercase;
 }
 
 .hero-container .row .text-col .contact-btn {
   padding: 9px 17px;
   font-family: 'PT Sans', serif;
   height: 41px;
-  width: 116px;
-  max-width: 116px;
+  width: 158px;
+  max-width: 158px;
   font-size: 18px;
   font-weight: bold;
   line-height: 23px;
