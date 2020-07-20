@@ -101,6 +101,14 @@ p, input {
   transition: all .2s ease-in-out;
 }
 
+@media screen and (max-width: 1024px) {
+  .logo-col {
+    -webkit-box-flex: 1 !important;
+        -ms-flex: 1 !important;
+            flex: 1 !important;
+  }
+}
+
 .hero-container {
   height: auto;
 }
@@ -352,6 +360,12 @@ hr {
   font-weight: bold;
 }
 
+@media screen and (max-width: 767px) {
+  .contact-col {
+    margin-top: 50px;
+  }
+}
+
 footer {
   padding: 24px 0px;
   background: #0d1a2f;
@@ -451,7 +465,7 @@ footer .container .link ul li {
   .how-container .img-para {
     -webkit-transform: scale(0.3);
             transform: scale(0.3);
-    top: 3%;
+    top: -4%;
     left: -16%;
   }
   .how-container .points-div {
@@ -485,10 +499,11 @@ footer .container .link ul li {
   .how-container .img-para {
     -webkit-transform: scale(0.5);
             transform: scale(0.5);
-    top: 8%;
+    top: 0%;
     left: -5%;
   }
   .how-container .points-div {
+    display: none;
     -webkit-transform: scale(0.5);
             transform: scale(0.5);
     bottom: -23%;

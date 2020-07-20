@@ -78,6 +78,12 @@ p, input {
         transition: all .2s ease-in-out;
 }
 
+@media screen and (max-width: 1024px) {
+        .logo-col {
+                flex: 1 !important;
+        }
+}
+
 
 // HERO
 .hero-container {
@@ -303,6 +309,12 @@ hr {
         }
 }
 
+@media screen and (max-width: 767px) {
+        .contact-col {
+                margin-top: 50px;
+        }
+}
+
 
 footer {
         padding: 24px 0px;
@@ -408,7 +420,7 @@ footer {
                 }
                 .img-para {
                         transform: scale(0.3);
-                        top: 3%;
+                        top: -4%;
                         left: -16%;
                     }
                     .points-div {
@@ -449,10 +461,11 @@ footer {
         .how-container{
                 .img-para {
                         transform: scale(0.5);
-                        top: 8%;
+                        top: 0%;
                         left: -5%;
                     }
                     .points-div {
+                            display: none;
                         br {
                                 display: block;
                         }
