@@ -45,20 +45,26 @@ p, input {
           flex: 3;
 }
 
-.nav-container .email-div {
-  width: 25%;
+.nav-container .contact-div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.nav-container .phone-div {
+  margin-right: 10px;
+}
+
+.nav-container .email-div, .nav-container .phone-div {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
 }
 
-.nav-container .email-div .icon-div {
+.nav-container .email-div .icon-div, .nav-container .phone-div .icon-div {
   margin-right: 16px;
   width: 53px;
   height: 53px;
@@ -75,11 +81,11 @@ p, input {
           align-items: center;
 }
 
-.nav-container .email-div .icon-div i {
+.nav-container .email-div .icon-div i, .nav-container .phone-div .icon-div i {
   color: #389264;
 }
 
-.nav-container .email-div p {
+.nav-container .email-div p, .nav-container .phone-div p {
   margin: 0;
   font-size: 16px;
   line-height: 26px;
@@ -88,7 +94,7 @@ p, input {
   text-transform: capitalize;
 }
 
-.nav-container .email-div p a {
+.nav-container .email-div p a, .nav-container .phone-div p a {
   font-size: 15px;
   line-height: 26px;
   font-weight: 400;
@@ -106,6 +112,37 @@ p, input {
     -webkit-box-flex: 1 !important;
         -ms-flex: 1 !important;
             flex: 1 !important;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .nav-container {
+    overflow: hidden;
+  }
+  .logo-col {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .contact-div {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 110%;
+    background: #F5F5F5;
+    margin-left: -15px;
+    margin-right: -15px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .contact-div .phone-div {
+    margin-right: 10px;
+  }
+  .contact-div .phone-div .icon-div, .contact-div .email-div .icon-div {
+    border: none;
+    width: 20px;
+    margin-right: 10px;
   }
 }
 
@@ -477,6 +514,57 @@ footer .container .link ul li {
   }
   .how-container .points-div br {
     display: none;
+  }
+  .how-container-mobile {
+    position: relative;
+  }
+  .how-container-mobile .img-para {
+    -webkit-transform: scale(0.45);
+            transform: scale(0.45);
+    position: absolute;
+    top: -2px;
+    left: -6px;
+  }
+  .how-container-mobile .points-div {
+    margin-top: -80px;
+  }
+  .how-container-mobile .points-div .small-head {
+    margin-left: 40px;
+    margin-bottom: 20px;
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 32px;
+  }
+  .how-container-mobile .points-div .points-list {
+    list-style: none;
+  }
+  .how-container-mobile .points-div .points-list .list-item {
+    margin-bottom: 20px;
+  }
+  .how-container-mobile .points-div .points-list .list-item p {
+    margin: 0;
+    margin-left: 40px;
+    font-size: 20px;
+    line-height: 26px;
+  }
+  .how-container-mobile .points-div .points-list .list-item p br {
+    display: none;
+  }
+  .how-container-mobile .points-div .points-list .list-item::before {
+    position: absolute;
+    left: -11px;
+    -webkit-transform: scale(0.5);
+            transform: scale(0.5);
+    margin-top: -15px;
+  }
+  .how-container-mobile .points-div .points-list .list-item:nth-of-type(1)::before {
+    content: url(../media/icons/Icon-1-Active-Ingradients.svg);
+  }
+  .how-container-mobile .points-div .points-list .list-item:nth-of-type(2)::before {
+    content: url(../media/icons/Icon-2-Nano-Particles.svg);
+  }
+  .how-container-mobile .points-div .points-list .list-item:nth-of-type(3)::before {
+    content: url(../media/icons/Icon-3-Coating.svg);
   }
   .form-container .form {
     width: 100%;

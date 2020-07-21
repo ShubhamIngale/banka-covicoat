@@ -38,11 +38,15 @@ p, input {
         .logo-col {
                 flex: 3;
         }
-        .email-div {
-                width: 25%;
+        .contact-div {
+                display: flex;
+        }
+        .phone-div {
+                margin-right: 10px;
+        }
+        .email-div, .phone-div {
                 display: flex;
                 align-items: center;
-                flex: 1;
                 .icon-div {
                         margin-right: 16px;
                         width: 53px;
@@ -81,6 +85,37 @@ p, input {
 @media screen and (max-width: 1024px) {
         .logo-col {
                 flex: 1 !important;
+        }
+}
+@media screen and (max-width: 767px) {
+        .nav-container {
+                overflow: hidden;
+        }
+        .logo-col {
+                padding-top: 20px;
+                padding-bottom: 20px;
+        }
+        .contact-div {
+                padding-top: 20px;
+                padding-bottom: 20px;
+                justify-content: space-between;
+                width: 110%;
+                background: #F5F5F5;
+                margin-left: -15px;
+                margin-right: -15px;
+                padding-left: 15px;
+                padding-right: 15px;
+                .phone-div {
+                        margin-right: 10px;
+                }
+
+                .phone-div, .email-div {
+                        .icon-div {
+                                border: none;
+                                width: 20px;
+                                margin-right: 10px;
+                        }
+                }
         }
 }
 
@@ -433,6 +468,63 @@ footer {
                         margin-left: -27%;
                     }
         } 
+
+        .how-container-mobile {
+                position: relative;
+                .img-para {
+                        transform: scale(0.45);
+                        position: absolute;
+                        top: -2px;
+                        left: -6px;
+                }
+                .points-div {
+                        margin-top: -80px;
+                        .small-head {
+                                margin-left: 40px;
+                                margin-bottom: 20px;
+                                font-size: 24px;
+                                font-weight: bold;
+                                line-height: 32px;
+                        }
+                        .points-list {
+                                list-style: none;
+                                .list-item {
+                                        margin-bottom: 20px;
+                                        p{
+                                                margin: 0;
+                                                margin-left: 40px;
+                                                font-size: 20px;
+                                                line-height: 26px;
+                                                br {
+                                                        display: none;
+                                                }
+                                        }
+                                        &::before {
+                                                position: absolute;
+                                                left: -11px;
+                                                transform: scale(0.5);
+                                                margin-top: -15px;
+                                        }
+                                }
+                                .list-item:nth-of-type(1) {
+                                        &::before {
+                                                content: url(../media/icons/Icon-1-Active-Ingradients.svg);
+                                        }
+                                }
+                                .list-item:nth-of-type(2) {
+                                        &::before {
+                                                content: url(../media/icons/Icon-2-Nano-Particles.svg);
+                                        }
+                                }
+                                .list-item:nth-of-type(3) {
+                                        &::before {
+                                                content: url(../media/icons/Icon-3-Coating.svg);
+                                        }
+                                }
+                                
+                        }
+                }
+        }
 
         .form-container {
                 .form {
