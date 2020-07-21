@@ -116,7 +116,7 @@
                         <div class="row">
                                 <div class="col-md-6 col-12 form-col">
                                         <h3 class="form-heading">Order the service</h3>
-                                        <form class="form" id="ajaxForm" method="POST" action="https://fistbumpmailer.herokuapp.com/ ">
+                                        <form class="form" id="ajaxForm" action="https://fistbumpmailer.herokuapp.com/ ">
                                                 <div class="form-group">
                                                         <input type="text" name="name" id="name" class="form-control" placeholder="Name" />
                                                 </div>
@@ -130,10 +130,10 @@
                                                         <textarea name="message" id="message" class="form-control" placeholder="Message"
                                                                 rows="4"></textarea>
                                                 </div>
-                                                <div class="g-recaptcha"
-                                                        data-sitekey="6Ld4C7QZAAAAADHH0FdwovtA0snefc7ZE-txFrh5"
-                                                        data-callback="onSubmit"
-                                                        data-size="invisible">
+                                                <div class="form-group">
+                                                        <div class="g-recaptcha"
+                                                                data-sitekey="6Ld4C7QZAAAAADHH0FdwovtA0snefc7ZE-txFrh5">
+                                                        </div>
                                                 </div>
                                                 <div class="btn-section text-center">
                                                         <!-- <input type="submit" value="SEND" class="btn send-btn" /> -->
@@ -199,12 +199,9 @@
 
 
         <script>
-        function onSubmit(token) {
-                grecaptcha.execute();
-        }
-        </script>
-
-        <script>
+                function onSubmit() {
+                        grecaptcha.execute();
+                }
                 $().ready(function () {
                         $('#ajaxForm').validate({
                                 rules: {
@@ -228,14 +225,26 @@
                                 },
                                 submitHandler: function (form) {
                                         $('.btn').html('<img src="./media/loader.svg" width="20px" />');
+                                        var name = $("#name").val();
+                                        var phone = $("#phone").val();
+                                        var email = $("#email").val();
+                                        var message = $("#message").val();
                                         $.ajax({
                                                 url: form.action,
                                                 type: 'POST',
-                                                data:$(form).serialize(),
-                                                processData: false,
+                                                // data:$(form).serialize(),
+                                                data: {
+                                                        name: name,
+                                                        phone: phone,
+                                                        email: email,
+                                                        message: message,
+                                                        captcha: grecaptcha.getResponse()
+                                                },
+                                                // processData: false,
                                                 success: function(data) {
                                                         $(form).trigger('reset');
                                                         $('.btn').html('SEND');
+                                                        console.log(data);
                                                         Swal.fire(
                                                                 'Sent!',
                                                                 'Thank you for showing interest. We will get back to you',
