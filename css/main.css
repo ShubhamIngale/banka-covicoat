@@ -529,7 +529,7 @@ footer .container .link ul li {
     margin-top: -90px;
   }
   .how-container-mobile .points-div .small-head {
-    margin-left: 40px;
+    margin-left: 55px;
     margin-bottom: 20px;
     font-size: 24px;
     font-weight: bold;
@@ -543,7 +543,7 @@ footer .container .link ul li {
   }
   .how-container-mobile .points-div .points-list .list-item p {
     margin: 0;
-    margin-left: 40px;
+    margin-left: 55px;
     font-size: 20px;
     line-height: 26px;
   }
@@ -552,7 +552,7 @@ footer .container .link ul li {
   }
   .how-container-mobile .points-div .points-list .list-item::before {
     position: absolute;
-    left: -11px;
+    left: -3px;
     -webkit-transform: scale(0.5);
             transform: scale(0.5);
     margin-top: -15px;
