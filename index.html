@@ -4,6 +4,7 @@
 <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+        <script defer src="https://www.google.com/recaptcha/api.js"></script>
         <!-- <link rel="icon" href="" type="image/gif" sizes="16x16"> -->
         <!-- bootstrap 4 -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
@@ -130,6 +131,14 @@
                                                         <textarea name="message" id="message" class="form-control" placeholder="Message"
                                                                 rows="4"></textarea>
                                                 </div>
+                                                <!-- <div class="form-group">
+                                                        <div class="g-recaptcha" data-sitekey="6LeygbIZAAAAAJW0L7VjQR9xDMQF5kQPVGOMRT19"></div>
+                                                </div> -->
+                                                <div class="g-recaptcha"
+                                                        data-sitekey="6LeygbIZAAAAAJW0L7VjQR9xDMQF5kQPVGOMRT19"
+                                                        data-callback="onSubmit"
+                                                        data-size="invisible">
+                                                </div>
                                                 <div class="btn-section text-center">
                                                         <!-- <input type="submit" value="SEND" class="btn send-btn" /> -->
                                                         <button type="submit" class="btn send-btn">SEND</button>
@@ -192,7 +201,7 @@
         <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.2/dist/jquery.validate.min.js"></script>
 
 
-        <script>
+        <script defer>
                 $().ready(function () {
                         $('#ajaxForm').validate({
                                 rules: {
@@ -239,6 +248,8 @@
                                 }
                         });
                 })
+
+        grecaptcha.execute();
         </script>
 
 </body>
