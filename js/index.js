@@ -68,6 +68,8 @@ var onSubmit = function(token) {
                 }
         })
 
+        grecaptcha.reset();
+
         }
 
 }
