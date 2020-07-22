@@ -85,4 +85,21 @@ function onload(){
         element.onclick = validate;
 }
 
+var nameI = $("#name");
+        var phoneI = $("#phone");
+        var emailI = $("#email"); 
+        var nameError = $('.nameError');
+        var emailError = $('.emailError');
+        var phoneError = $('.phoneError');
+
+        nameI.change(function() {
+                nameError.html('')
+        });
+        phoneI.change(function() {
+                phoneError.html('')
+        });
+        emailI.change(function() {
+                emailError.html('')
+        });
+
 onload();
